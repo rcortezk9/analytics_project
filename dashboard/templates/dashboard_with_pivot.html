@@ -30,7 +30,25 @@ $.ajax({
             report: {
                 dataSource: {
                     type: "json",
-                    data: processData(data)
+                    data: processData(data),
+                    mapping: {
+                        "product_category": {
+                            "caption": "Product Category",
+                            "type": "string"
+                        },
+                        "payment_method": {
+                            "caption": "Payment Method",
+                            "type": "string"
+                        },
+                        "shipping_cost": {
+                            "caption": "Shipping Cost",
+                            "type": "number"
+                        },
+                        "unit_price": {
+                            "caption": "Unit Price",
+                            "type": "number"
+                        }
+                    }
                 },
                 slice: {}
             }
@@ -44,7 +62,25 @@ $.ajax({
             report: {
                 dataSource: {
                     type: "json",
-                    data: processData(data)
+                    data: processData(data),
+                    mapping: {
+                        "product_category": {
+                            "caption": "Product Category",
+                            "type": "string"
+                        },
+                        "payment_method": {
+                            "caption": "Payment Method",
+                            "type": "string"
+                        },
+                        "shipping_cost": {
+                            "caption": "Shipping Cost",
+                            "type": "number"
+                        },
+                        "unit_price": {
+                            "caption": "Unit Price",
+                            "type": "number"
+                        }
+                    }
                 },
                 slice: {},
                 "options": {
